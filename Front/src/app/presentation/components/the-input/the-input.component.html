@@ -1,0 +1,7 @@
+<label class="label" [title]="label">{{ label }}</label>
+<input
+  class="w-100"
+  [type]="type"
+  [(ngModel)]="inputModel"
+  (ngModelChange)="inputModelChange.emit(inputModel)"
+/>
