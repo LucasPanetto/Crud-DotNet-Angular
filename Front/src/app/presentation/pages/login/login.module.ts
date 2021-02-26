@@ -6,14 +6,15 @@ import { LoginComponent } from './login.component'
 import { FormLoginComponent } from './form-login/form-login.component'
 import { AsideLoginComponent } from './aside-login/aside-login.component'
 import { TheInputComponent } from '../../components/the-input/the-input.component'
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { TheButtonComponent } from '../../components/the-button/the-button.component'
 
 @NgModule({
-  declarations: [LoginComponent, FormLoginComponent, AsideLoginComponent, TheInputComponent],
+  declarations: [LoginComponent, FormLoginComponent, AsideLoginComponent, TheInputComponent, TheButtonComponent],
   imports: [
     CommonModule,
     LoginRoutingModule,
-    FormsModule
+    FormsModule,
   ],
 })
 
