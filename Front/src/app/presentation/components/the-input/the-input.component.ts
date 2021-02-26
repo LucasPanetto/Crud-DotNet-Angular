@@ -9,6 +9,8 @@ import { EventEmitter, Output } from '@angular/core'
 export class TheInputComponent implements OnInit {
   @Input() label: string = 'Label'
   @Input() type: string = 'text'
+  @Input() propertieClass: string = ''
+  @Input() icon: any = ''
   @Input() inputModel: any
 
   @Output() inputModelChange = new EventEmitter()

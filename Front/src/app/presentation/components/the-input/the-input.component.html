@@ -1,7 +1,11 @@
-<label class="label" [title]="label">{{ label }}</label>
-<input
-  class="w-100"
-  [type]="type"
-  [(ngModel)]="inputModel"
-  (ngModelChange)="inputModelChange.emit(inputModel)"
-/>
+<label class="label" [class]="propertieClass" [title]="label">{{ label }}</label>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="btn">
+            <i [class]="icon" aria-hidden="true"></i>
+        </span>
+    </div>
+    <input class="form-control" [class]="propertieClass" [type]="type" [(ngModel)]="inputModel"
+        (ngModelChange)="inputModelChange.emit(inputModel)" />
+</div>
