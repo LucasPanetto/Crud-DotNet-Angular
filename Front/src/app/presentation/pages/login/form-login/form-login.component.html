@@ -1,12 +1,49 @@
-<div class="row text-white text-center">
-    <h3 class="col-md-12">Bem Vindo</h3>
-    <h6 class="col-md-12">Faça login usando suas credenciais</h6>
-</div>
-<div class="row">
-    <div class="col-md-8">
-        <app-the-input></app-the-input>
+<div class="form">
+    <div class="row text-white text-center">
+        <h3 class="col-md-12">Bem Vindo</h3>
+        <h6 class="col-md-12">Faça login usando suas credenciais</h6>
     </div>
-    <div class="col-md-8">
-        <app-the-input></app-the-input>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <app-the-input [propertieClass]="'login-form'" [label]="'Login'" [icon]="'far fa-user'"></app-the-input>
+        </div>
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <app-the-input [propertieClass]="'login-form'" [label]="'Senha'" [type]="'password'" [icon]="'fas fa-lock'">
+            </app-the-input>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="float-right">Esqueceu sua senha?</div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <app-the-button [text]="'Login'" [propertieClass]="'btn btn-danger rounded-pill w-100'"></app-the-button>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <app-the-button [text]="'Criar Conta'"
+                [propertieClass]="'btn btn-outline-secondary text-white rounded-pill w-100'"></app-the-button>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 d-flex justify-content-between">
+            <i class="fab fa-facebook-square fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-twitter-square fa-lg"></i>
+            <i class="fab fa-linkedin fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+        </div>
+    </div>
+
 </div>
