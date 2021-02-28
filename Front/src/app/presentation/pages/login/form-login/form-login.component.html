@@ -5,37 +5,64 @@
         <h6 class="col-md-12">Faça login usando suas credenciais</h6>
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <app-the-input [propertieClass]="'login-form'" [label]="'Login'" [icon]="'far fa-user'"></app-the-input>
+    <form [formGroup]="loginForm" (ngSubmit)="tryLogin()">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <label for="userName">Login</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="btn d-flex align-items-center">
+                            <i class="far fa-user" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input id="userName" class="form-control login-form" type="text" placeholder="Digite seu login"
+                        formControlName="userName" />
+                    <app-validate-message class="w-100" [entity]="loginForm.controls.userName">
+                    </app-validate-message>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="row justify-content-center">
-        <div class="col-md-10 mb-0">
-            <app-the-input [propertieClass]="'login-form'" [label]="'Senha'" [type]="'password'" [icon]="'fas fa-lock'">
-            </app-the-input>
-        </div>
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10 mb-0">
 
-    <div class="row justify-content-center mt-1">
-        <div class="col-md-10">
-            <div class="float-right text-white textForgotPass">Esqueceu sua senha?</div>
-        </div>
-    </div>
+                <label for="password">Senha</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="btn d-flex align-items-center">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input id="password" class="form-control login-form" type="password" placeholder="Digite sua senha"
+                        formControlName="password" />
+                    <app-validate-message class="w-100" [entity]="loginForm.controls.password"></app-validate-message>
 
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-10">
-            <app-the-button [text]="'Login'" [propertieClass]="'btn btn-danger rounded-pill w-100'"></app-the-button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="row justify-content-center mt-4">
-        <div class="col-md-10">
-            <app-the-button [text]="'Criar Conta'"
-                [propertieClass]="'btn btn-outline-secondary text-white rounded-pill w-100'"></app-the-button>
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-10">
+                <div class="float-right text-white textForgotPass">Esqueceu sua senha?</div>
+            </div>
         </div>
-    </div>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-10">
+                <app-the-button [text]="'Login'" [propertieClass]="'btn btn-danger rounded-pill w-100'"
+                    [type]="'submit'">
+                </app-the-button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10">
+                <app-the-button [text]="'Criar Conta'"
+                    [propertieClass]="'btn btn-outline-secondary text-white rounded-pill w-100'" [type]="'button'">
+                </app-the-button>
+            </div>
+        </div>
+    </form>
 
     <div class="row justify-content-center mt-5">
         <div class="col-md-8 d-flex justify-content-between socialMediaList">
