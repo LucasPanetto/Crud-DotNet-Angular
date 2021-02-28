@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { EventEmitter, Output } from '@angular/core'
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-the-input',
@@ -8,6 +9,7 @@ import { EventEmitter, Output } from '@angular/core'
 })
 export class TheInputComponent implements OnInit {
   @Input() label: string = 'Label'
+  @Input() placeholder: string = ''
   @Input() type: string = 'text'
   @Input() propertieClass: string = ''
   @Input() icon: any = ''

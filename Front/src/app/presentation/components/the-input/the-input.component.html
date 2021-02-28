@@ -1,11 +1,10 @@
-<label class="label" [class]="propertieClass" [title]="label">{{ label }}</label>
-
+<label class="label" [class]="propertieClass" [title]="label" [for]="label">{{ label }}</label>
 <div class="input-group">
     <div class="input-group-prepend">
         <span class="btn d-flex align-items-center">
             <i [class]="icon" aria-hidden="true"></i>
         </span>
     </div>
-    <input class="form-control" [class]="propertieClass" [type]="type" [(ngModel)]="inputModel"
-        (ngModelChange)="inputModelChange.emit(inputModel)" />
+    <input [id]="label" class="form-control" [class]="propertieClass" [type]="type" [(ngModel)]="inputModel"
+        (ngModelChange)="inputModelChange.emit(inputModel)" [placeholder]="placeholder" />
 </div>
