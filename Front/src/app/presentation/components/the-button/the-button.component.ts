@@ -9,6 +9,7 @@ import { EventEmitter, Output } from '@angular/core'
 export class TheButtonComponent implements OnInit {
   @Input() text: string = 'Botão'
   @Input() propertieClass: any = ''
+  @Input() type: string = 'button'
 
   @Output() buttonClick = new EventEmitter()
   constructor() { }
