@@ -1,3 +1,10 @@
-<div class="container-fluid h-100 p-0">
-  <router-outlet></router-outlet>
+<div class="container-fluid p-0 m-0 row h-100 w-100" style="background-color: orange;">
+  <div class="col-md-2 p-0">
+    <app-the-sidebar>
+    </app-the-sidebar>
+  </div>
+  <div class="col">
+
+    <router-outlet class="w-100"></router-outlet>
+  </div>
 </div>
