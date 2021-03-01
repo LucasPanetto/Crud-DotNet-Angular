@@ -17,8 +17,10 @@ import { ValidateMessageModule } from '../../components/validate-message/validat
     LoginRoutingModule,
     FormsModule,
     TheInputModule,
-    TheButtonModule, ReactiveFormsModule, ValidateMessageModule
-  ],
+    TheButtonModule,
+    ReactiveFormsModule,
+    ValidateMessageModule,
+  ]
 })
 
 export class LoginModule { }
