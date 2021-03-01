@@ -10,6 +10,7 @@ export class TheButtonComponent implements OnInit {
   @Input() text: string = 'Botão'
   @Input() propertieClass: any = ''
   @Input() type: string = 'button'
+  @Input() isDisabled: boolean = false
 
   @Output() buttonClick = new EventEmitter()
   constructor() { }
