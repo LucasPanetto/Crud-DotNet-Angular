@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { RequestService } from 'src/app/core/services/request.service';
 
 @Component({
   selector: 'app-form-login',
   templateUrl: './form-login.component.html',
-  styleUrls: ['./form-login.component.sass']
+  styleUrls: ['./form-login.component.sass'],
 })
 export class FormLoginComponent implements OnInit {
-  public loginForm: FormGroup;
+  loginForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {
+  constructor(private formBuilder: FormBuilder, private router: Router, private requestService: RequestService) {
     this.loginForm = this.formBuilder.group({
-      userName: ['', [Validators.required]], //wsilvas
-      password: ['Kg#84bbbcb8', Validators.required], //Kg#84bbbcb8
+      userName: ['', [Validators.required]],
+      password: ['', Validators.required],
     })
   }
 
@@ -21,7 +22,7 @@ export class FormLoginComponent implements OnInit {
   }
 
   tryLogin() {
-    if (this.loginForm.invalid) {
+  /*   if (this.loginForm.invalid) {
       console.log('is invalid')
       this.loginForm.markAllAsTouched()
       return
@@ -29,7 +30,7 @@ export class FormLoginComponent implements OnInit {
 
     console.log('Indo pra HOME')
     this.router.navigate(['home']);
-
+ */
   }
 
 }
