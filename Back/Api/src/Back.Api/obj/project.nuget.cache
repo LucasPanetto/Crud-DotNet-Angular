@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7KFHnvWg4lm1jCoBSQrvryJY1a2vH0dDHcqBTU2Bf44XnGQzh6IJsjuissDbkpTQ7dLXF35FphmGbzBQXvzmaA==",
+  "dgSpecHash": "m/+NLsWkA2ygAZXkvr5ZjA4aYV8EVtsrR8upUVOavDsiMsQpC5K4dFIxrlsJv9R1rUgQWc/B5CpCo4U9mw3AIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Api\\Back.Api.csproj",
   "expectedPackageFiles": [
@@ -127,8 +127,6 @@
     "C:\\Users\\agape\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\agape\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\agape\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\agape\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
-    "C:\\Users\\agape\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
     "C:\\Users\\agape\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\agape\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\agape\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
