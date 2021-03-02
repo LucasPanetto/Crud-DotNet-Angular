@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{1599033E-6D0A-4D63-B319-0826EE0DC00B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Api", "Back.Api\Back.Api.csproj", "{E9874AD4-90B0-4B6C-B240-908AA61D56ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Api", "src\Back.Api\Back.Api.csproj", "{E9874AD4-90B0-4B6C-B240-908AA61D56ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Application", "Back.Application\Back.Application.csproj", "{0A252E88-1B09-48E1-9021-F5EEE2A75DDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Application", "src\Back.Application\Back.Application.csproj", "{0A252E88-1B09-48E1-9021-F5EEE2A75DDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Infrastructure", "Back.Infrastructure\Back.Infrastructure.csproj", "{CFC3F444-5484-4CCA-B6E0-48053808CD7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Infrastructure", "src\Back.Infrastructure\Back.Infrastructure.csproj", "{CFC3F444-5484-4CCA-B6E0-48053808CD7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Domain.Core", "Back.Domain.Core\Back.Domain.Core.csproj", "{C7FFAB93-BC4E-4E6E-A74B-67DD8D5141CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Domain.Core", "src\Back.Domain.Core\Back.Domain.Core.csproj", "{C7FFAB93-BC4E-4E6E-A74B-67DD8D5141CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Domain", "Back.Domain\Back.Domain.csproj", "{C63A47BC-1A74-4FA9-B6AE-777F5CE25DED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back.Domain", "src\Back.Domain\Back.Domain.csproj", "{C63A47BC-1A74-4FA9-B6AE-777F5CE25DED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
