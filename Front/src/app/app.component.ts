@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './core/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Front';
+  isAuthenticated = false;
+
+  constructor(private authService: AuthService) {
+    this.authService.isLoggedIn.subscribe((loggedIn) => {
+      if (loggedIn) {
+        this.isAuthenticated = loggedIn
+      }
+    })
+  }
 }

@@ -1,10 +1,9 @@
-<div class="container-fluid p-0 m-0 row h-100 w-100" style="background-color: orange;">
-  <div class="col-md-2 p-0">
+<div class="container-fluid p-0 m-0 row h-100 w-100">
+  <div class="col-md-2 p-0" *ngIf="isAuthenticated">
     <app-the-sidebar>
     </app-the-sidebar>
   </div>
-  <div class="col">
-
+  <div class="col p-0">
     <router-outlet class="w-100"></router-outlet>
   </div>
 </div>
