@@ -9,7 +9,8 @@ namespace Back.Application.DTOs.Product
     {
         [Required(ErrorMessage = "É necessário informar o nome do produto")]
         public string Name { get; set; }
-        public decimal Price { get; set; }
+        [Required(ErrorMessage = "É necessário informar o valor do produto")]
+        public double Price { get; set; }
         [Required(ErrorMessage = "É necessário selecionar uma imagem")]
         public string ImageBase64 { get; set; }
     }

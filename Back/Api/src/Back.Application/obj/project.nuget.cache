@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5SoSxxR2owkNU0zQ+K0g8ekyEy4wme5GtdoSmDb6KYR2qGFSV4GKI6kRGPLPO5WgtdG0RfgQ6fTvTVgbPwchTA==",
+  "dgSpecHash": "OYINxxm/iMTUnzDLo1wS852uIAmpQGyQX5SX1TLmFPG4JbKRFYh69+3/MoiRixIxAk4SnZFKWh0nJCQb2KsnIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Application\\Back.Application.csproj",
   "expectedPackageFiles": [

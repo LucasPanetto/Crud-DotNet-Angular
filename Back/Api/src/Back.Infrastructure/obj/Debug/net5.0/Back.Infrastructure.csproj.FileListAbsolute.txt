@@ -1,0 +1,17 @@
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Infrastructure.deps.json
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Infrastructure.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\ref\Back.Infrastructure.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Infrastructure.pdb
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Domain.Core.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Domain.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Domain.pdb
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\bin\Debug\net5.0\Back.Domain.Core.pdb
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.csprojAssemblyReference.cache
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.AssemblyInfo.cs
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.csproj.CopyComplete
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\ref\Back.Infrastructure.dll
+C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\src\Back.Infrastructure\obj\Debug\net5.0\Back.Infrastructure.pdb
