@@ -13,9 +13,9 @@ namespace Back.Application.Interfaces
 
         public Task<GetProductDTO> GetProductById(Guid id);
 
-        public Task<GetProductDTO> CreateProduct(InsertProductDTO hero);
+        public Task<GetProductDTO> CreateProduct(InsertProductDTO product);
 
-        public Task<GetProductDTO> UpdateProduct(Guid id, UpdateProductDTO updatedHero);
+        public Task<GetProductDTO> UpdateProduct(Guid id, UpdateProductDTO updatedProduct);
 
         public Task<bool> DeleteProduct(Guid id);
     }

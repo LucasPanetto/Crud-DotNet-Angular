@@ -54,7 +54,7 @@ namespace Back.Application.Services
             if (originalProduct == null) return null;
 
             originalProduct.Name = updatedProduct?.Name;
-            originalProduct.Price = (decimal)updatedProduct?.Price;
+            originalProduct.Price = (double)updatedProduct?.Price;
             originalProduct.ImageBase64 = updatedProduct?.ImageBase64;
             _productRepository.Update(originalProduct);
             await _productRepository.SaveChangesAsync();
