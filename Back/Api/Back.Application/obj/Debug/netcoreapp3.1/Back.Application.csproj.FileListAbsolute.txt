@@ -1,0 +1,14 @@
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Application.deps.json
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Application.dll
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Application.pdb
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.csprojAssemblyReference.cache
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.AssemblyInfoInputs.cache
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.AssemblyInfo.cs
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.csproj.CoreCompileInputs.cache
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.dll
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.pdb
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Domain.Core.dll
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Domain.dll
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Domain.pdb
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\bin\Debug\netcoreapp3.1\Back.Domain.Core.pdb
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Application\obj\Debug\netcoreapp3.1\Back.Application.csproj.CopyComplete
