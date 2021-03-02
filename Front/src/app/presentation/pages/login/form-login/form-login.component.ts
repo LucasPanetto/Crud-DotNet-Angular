@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginResultModel } from 'src/app/core/domain/loginResult.model';
+import { UserModel } from 'src/app/core/domain/user.model';
 import { RequestService } from 'src/app/core/services/request.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-form-login',
@@ -10,7 +13,6 @@ import { RequestService } from 'src/app/core/services/request.service';
 })
 export class FormLoginComponent implements OnInit {
   loginForm: FormGroup;
-
   constructor(private formBuilder: FormBuilder, private router: Router, private requestService: RequestService) {
     this.loginForm = this.formBuilder.group({
       userName: ['', [Validators.required]],
@@ -27,9 +29,16 @@ export class FormLoginComponent implements OnInit {
       return
     }
 
-    this.requestService.login('11234567890', '09876543211').subscribe(data => {console.log(data)});
-    /* console.log('Indo pra HOME')
-    this.router.navigate(['home']); */
+    const userLoggin = this.loginForm.value as UserModel;
+
+    this.requestService.login(userLoggin.userName, userLoggin.password).subscribe((data: LoginResultModel) => {
+      if (data.success) {
+        localStorage.setItem('user', JSON.stringify(userLoggin))
+        this.router.navigate(['home']);
+      } else {
+        alert(`Atenção: ${data.error}`);
+      }
+    })
   }
 
 }
