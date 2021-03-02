@@ -72,6 +72,8 @@ namespace Back.Api
 
             app.UseRouting();
 
+            app.UseApiDoc();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

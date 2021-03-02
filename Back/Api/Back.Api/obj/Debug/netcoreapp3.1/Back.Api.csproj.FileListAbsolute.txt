@@ -106,3 +106,4 @@ C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Api\bin\Debug\netcore
 C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Api\bin\Debug\netcoreapp3.1\Back.Domain.Core.pdb
 C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Api\obj\Debug\netcoreapp3.1\Back.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Api\obj\Debug\netcoreapp3.1\Back.Api.csproj.CopyComplete
+C:\Users\Panetto\Desktop\Crud-DotNet-Angular\Back\Api\Back.Api\bin\Debug\netcoreapp3.1\Back.Api.xml

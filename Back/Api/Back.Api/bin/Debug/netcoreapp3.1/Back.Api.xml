@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Back.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Back.Api.Controllers.ProductController.GetProductes(Back.Application.Filters.GetProductsFilter)">
+            <summary>
+            Returns all productes in the database
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Back.Api.Controllers.ProductController.GetProductById(System.Guid)">
+            <summary>
+            Get one product by id from the database
+            </summary>
+            <param name="id">The product's ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Back.Api.Controllers.ProductController.Create(Back.Application.DTOs.Product.InsertProductDTO)">
+            <summary>
+            Insert one product in the database
+            </summary>
+            <param name="dto">The product information</param>
+            <returns></returns>
+        </member>
+        <member name="M:Back.Api.Controllers.ProductController.Update(System.Guid,Back.Application.DTOs.Product.UpdateProductDTO)">
+            <summary>
+            Update a product from the database
+            </summary>
+            <param name="id">The product's ID</param>
+            <param name="dto">The update object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Back.Api.Controllers.ProductController.Delete(System.Guid)">
+            <summary>
+            Delete a product from the database
+            </summary>
+            <param name="id">The product's ID</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
