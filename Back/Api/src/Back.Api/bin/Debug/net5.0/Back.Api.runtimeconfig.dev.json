@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\agape\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\agape\\.nuget\\packages"
+      "C:\\Users\\Panetto\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Panetto\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
 }

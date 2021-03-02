@@ -8624,19 +8624,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\agape\\.nuget\\packages\\": {}
+    "C:\\Users\\Panetto\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\Back.Api.IntegrationTests.csproj",
+      "projectUniqueName": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\Back.Api.IntegrationTests.csproj",
       "projectName": "Back.Api.IntegrationTests",
-      "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\Back.Api.IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\agape\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\obj\\",
+      "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\Back.Api.IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\Panetto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\tests\\Back.Api.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\agape\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Panetto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8650,14 +8654,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Api\\Back.Api.csproj": {
-              "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Api\\Back.Api.csproj"
+            "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Api\\Back.Api.csproj": {
+              "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Api\\Back.Api.csproj"
             },
-            "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj": {
-              "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj"
+            "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj": {
+              "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj"
             },
-            "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Infrastructure\\Back.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Infrastructure\\Back.Infrastructure.csproj"
+            "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Infrastructure\\Back.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Infrastructure\\Back.Infrastructure.csproj"
             }
           }
         }
