@@ -22,15 +22,14 @@ export class FormLoginComponent implements OnInit {
   }
 
   tryLogin() {
-  /*   if (this.loginForm.invalid) {
-      console.log('is invalid')
+    if (this.loginForm.invalid) {
       this.loginForm.markAllAsTouched()
       return
     }
 
-    console.log('Indo pra HOME')
-    this.router.navigate(['home']);
- */
+    this.requestService.login('11234567890', '09876543211').subscribe(data => {console.log(data)});
+    /* console.log('Indo pra HOME')
+    this.router.navigate(['home']); */
   }
 
 }
