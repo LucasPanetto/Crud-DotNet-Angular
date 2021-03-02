@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6/MM+Pz/dtDfaI2kQjHFlIb2L7fJ4KMQZIiaD+vnLA6zrrahVmGdbmROAGZTFn/B1Zf8NS6BUBMez2B+9I3Njg==",
+  "dgSpecHash": "i53rWPrQ9+rGHnavJVZOUmC/RbQSthce3sKa21l/q/FqOlQYcZQYEjAu6yE9/ppnbDkWmrW88V9L60a1hy3VdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
+  "projectFilePath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
