@@ -8,6 +8,8 @@ import { AsideLoginComponent } from './aside-login/aside-login.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TheButtonModule } from '../../components/the-button/the-button.module';
 import { ValidateMessageModule } from '../../components/validate-message/validate-message.module'
+import { ToastrModule } from 'ngx-toastr'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [LoginComponent, FormLoginComponent, AsideLoginComponent],
@@ -18,6 +20,8 @@ import { ValidateMessageModule } from '../../components/validate-message/validat
     TheButtonModule,
     ReactiveFormsModule,
     ValidateMessageModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ]
 })
 
