@@ -4,7 +4,6 @@ import { HomeRoutingModule } from './home-routing.module'
 
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home.component'
-import { TheInputModule } from '../../components/the-input/the-input.module';
 import { TheButtonModule } from '../../components/the-button/the-button.module';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { TheButtonModule } from '../../components/the-button/the-button.module';
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    TheInputModule,
     TheButtonModule
   ],
 })
