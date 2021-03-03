@@ -1,1 +1,4 @@
-<button [type]="type" [class]="propertieClass" [disabled]="isDisabled">{{text}}</button>
+<button [type]="type" [class]="propertieClass" [disabled]="isDisabled" (click)="clickButton()">
+    <span *ngIf="text">{{text}}</span>
+    <i *ngIf="icon" [class]="icon"></i>
+</button>
