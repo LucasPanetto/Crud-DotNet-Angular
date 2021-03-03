@@ -17,4 +17,7 @@ export class TheMenuComponent implements OnInit {
     this.actualRouter = this.router
   }
 
+  redirect(route: string) {
+    this.router.navigate([route]);
+  }
 }
