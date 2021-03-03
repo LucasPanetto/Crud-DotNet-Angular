@@ -1,5 +1,5 @@
 export interface ProductModel {
     name: string;
     price: number;
-    image: string;
+    imageBase64: string;
 }
