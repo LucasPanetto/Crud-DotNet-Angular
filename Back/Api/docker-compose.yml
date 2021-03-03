@@ -1,0 +1,21 @@
+version: "3.6"
+networks:
+  localdev:
+    name: localdev
+
+services:
+  db-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: mssql
+    networks:
+      - localdev
+  back-api:
+    build:
+      context: .
+      dockerfile: src/Back.Api/Dockerfile
+    image: back-api:local
+    container_name: back-api
+    depends_on:
+      - db-server
+    networks:
+      - localdev
