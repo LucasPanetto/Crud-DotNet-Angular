@@ -50,7 +50,7 @@
 	<li>Angular CLI</li>
 </ul>
 
-<p>Configure a variavel 'baseUrl' existente no arquivo de enviroment.</p<
+<p>Configure a variavel 'baseUrl' existente no arquivo de enviroment.</p>
 <p>Acesse o diretório chamado 'Front', execute o compando <code>npm i</code> para instalar as dependências, após isso,  execute <code>ng serve</code>.</p>
 
 <h3> BackEnd: </h3>
@@ -67,8 +67,9 @@
 
 <h3> Migrations: </h3>
 <ol>
-	<li> Altere a propriedade  <code>DefaultConnection</code> do objeto <code>ConnectionString</code> no arquivo <code>Back.Api/appsettings.json</code</li>
-	<li> Para executar migrações neste projeto, execute o seguinte comando no diretório 'Back/Api': </li> 			<code>dotnet ef database update --startup-project ./src/Back.Api --project ./src/Back.Infrastructure</code>
+	<li> Altere a propriedade  <code>DefaultConnection</code> do objeto <code>ConnectionString</code> no arquivo <code>Back.Api/appsettings.json</code></li>
+	<li> Para executar migrações neste projeto, execute o seguinte comando no diretório 'Back/Api': <code>dotnet ef database update --startup-project ./src/Back.Api --project ./src/Back.Infrastructure</code> </li> 			
+	
 	<br>	
 	<small>Este comando irá definir o ponto de entrada para a migração (o responsável por selecionar o dbprovider {sqlserver, mysql, etc} e a string de conexão) e o próprio projeto será a infraestrutura, que é onde está o dbcontext.</small>
 </ol>
