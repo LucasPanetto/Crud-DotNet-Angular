@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row py-3">
+        <div class="col-md-6">
+            <input placeholder="Busque por nome" class="form-control w-100" />
+        </div>
+        <div class="col-md-1">
+            <app-the-button [icon]="'fas fa-search'" [propertieClass]="'btn btn-primary rounded-pill w-100'"
+                [type]="'submit'">
+            </app-the-button>
+
+        </div>
+
+        <div class="col-md-5">
+            <app-the-button [text]="'Cadastrar Produto'" [propertieClass]="'btn btn-primary rounded-pill float-right'"
+                [type]="'submit'" (buttonClick)="open(content)">
+            </app-the-button>
+        </div>
+    </div>
+    <div class="row" *ngIf="productList.length > 0">
+        <div class="col-md-4 py-2" *ngFor="let product of productList">
+            <app-product-card [product]="product" (deletedProduct)="getListProduct()" (editProduct)="editProduct($event)"></app-product-card>
+        </div>
+    </div>
+    <div class="row" *ngIf="!productList || productList.length == 0">
+        <div class="col-md-12 text-center mt-5">
+            <h4>Não existem produtos cadastrados</h4>
+        </div>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Cadastrar Produto</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="productForm">
+            <div class="row justify-content-center">
+                <div class="col-md-10 mb-3">
+                    <label for="nameProduct">Nome do produto</label>
+                    <input id="nameProduct" type="text" class="form-control w-100" formControlName="name" />
+                    <app-validate-message class="w-100" [entity]="productForm.controls.name">
+                    </app-validate-message>
+                </div>
+                <div class="col-md-10 mb-3">
+                    <label for="priceProduct">Preço de Venda</label>
+                    <input id="priceProduct" currencyMask formControlName="price" class="form-control w-100"
+                        [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align:'left' }" />
+                    <app-validate-message class="w-100" [entity]="productForm.controls.price">
+                    </app-validate-message>
+                </div>
+
+                <div class="col-md-10 mb-3">
+                    <label for="imageProduct">Imagem</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" accept="image/png"
+                            (change)="handleUpload($event)" value="batat" />
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <span class="small">{{fileName}}</span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" (click)="trySave()">Salvar</button>
+    </div>
+</ng-template>
