@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { LoginResultModel } from 'src/app/core/domain/loginResult.model';
 import { UserModel } from 'src/app/core/domain/user.model';
 import { RequestService } from 'src/app/core/services/request.service';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-form-login',
