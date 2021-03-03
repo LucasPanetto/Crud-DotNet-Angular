@@ -11,7 +11,6 @@ export class ValidateMessageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.entity)
   }
 
 }
