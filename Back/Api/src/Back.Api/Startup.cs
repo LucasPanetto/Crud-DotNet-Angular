@@ -47,6 +47,8 @@ namespace Back.Api
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); // for enum as strings
             });
 
+            services.AddCors();
+
             // AutoMapper settings
             services.AddAutoMapperSetup();
 
@@ -71,6 +73,10 @@ namespace Back.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(
+               options => options.SetIsOriginAllowed(x => _ = true).AllowAnyMethod().AllowAnyHeader().AllowCredentials()
+           ); //This needs to set everything allowed
 
             app.UseApiDoc();
 
