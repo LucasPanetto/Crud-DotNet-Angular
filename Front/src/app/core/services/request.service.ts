@@ -28,15 +28,15 @@ export class RequestService {
             catchError(this.handleError))
     }
 
-    get(): Observable<any> {
-        return this.httpClient.get<any>(this.defaultUrl)
+    get(path?: string): Observable<any> {
+        return this.httpClient.get<any>(this.defaultUrl + path)
             .pipe(
                 retry(2),
                 catchError(this.handleError))
     }
 
-    post(entity: any): Observable<any> {
-        return this.httpClient.post<any>(this.defaultUrl, JSON.stringify(entity), this.httpOptions)
+    post(path: string, entity: any): Observable<any> {
+        return this.httpClient.post<any>(this.defaultUrl + path, JSON.stringify(entity), this.httpOptions)
             .pipe(
                 retry(2),
                 catchError(this.handleError)
@@ -51,8 +51,8 @@ export class RequestService {
             )
     }
 
-    deleteCar(entity: any) {
-        return this.httpClient.delete<any>(this.defaultUrl + '/' + entity.id, this.httpOptions)
+    delete(path: string, entity: any) {
+        return this.httpClient.delete<any>(this.defaultUrl + path + '/' + entity.id, this.httpOptions)
             .pipe(
                 retry(1),
                 catchError(this.handleError)
