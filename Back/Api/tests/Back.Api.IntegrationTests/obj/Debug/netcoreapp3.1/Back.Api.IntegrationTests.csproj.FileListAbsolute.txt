@@ -1,4 +1,0 @@
-C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\tests\Back.Api.IntegrationTests\obj\Debug\netcoreapp3.1\Back.Api.IntegrationTests.csprojAssemblyReference.cache
-C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\tests\Back.Api.IntegrationTests\obj\Debug\netcoreapp3.1\Back.Api.IntegrationTests.AssemblyInfoInputs.cache
-C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\tests\Back.Api.IntegrationTests\obj\Debug\netcoreapp3.1\Back.Api.IntegrationTests.AssemblyInfo.cs
-C:\Users\agape\Desktop\Crud-DotNet-Angular\Back\Api\tests\Back.Api.IntegrationTests\obj\Debug\netcoreapp3.1\Back.Api.IntegrationTests.csproj.CoreCompileInputs.cache
