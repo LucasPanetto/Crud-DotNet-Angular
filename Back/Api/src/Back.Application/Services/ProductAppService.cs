@@ -31,7 +31,7 @@ namespace Back.Application.Services
             var products = _productRepository
                 .GetAll()
                 .WhereIf(!string.IsNullOrEmpty(filter?.Name), x => EF.Functions.Like(x.Name, $"%{filter.Name}%"))
-                .WhereIf(filter?.Price != null, x => x.Price == filter.Price);
+                .WhereIf(filter?.Price != null && filter?.Price != 0, x => x.Price == filter.Price);
             return await _mapper.ProjectTo<GetProductDTO>(products)
                 .ToListAsync();
         }
