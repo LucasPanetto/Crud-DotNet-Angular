@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent implements OnInit {
   title = 'Front';
   isAuthenticated = false;
-
+  
   constructor(private authService: AuthService, private toastr: ToastrService) {
     this.authService.isLoggedIn.subscribe((loggedIn) => {
       if (loggedIn) {
@@ -20,6 +20,5 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.toastr.success('Hello world!', 'Toastr fun!');
   }
 }
