@@ -9,6 +9,7 @@ import { ProductsComponent } from './products.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxCurrencyModule } from "ngx-currency";
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [ProductsComponent, ProductCardComponent],
@@ -20,7 +21,8 @@ import { NgxCurrencyModule } from "ngx-currency";
     ReactiveFormsModule,
     ValidateMessageModule,
     NgbModule,
-    NgxCurrencyModule
+    NgxCurrencyModule,
+    ToastrModule.forRoot()
   ]
 })
 
