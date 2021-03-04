@@ -1,11 +1,22 @@
 <div class="container">
-    <div class="row py-3">
-        <div class="col-md-6">
-            <input placeholder="Busque por nome" class="form-control w-100" />
+    <div class="loadingOverlay" *ngIf="loading">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <div class="col-md-1">
-            <app-the-button [icon]="'fas fa-search'" [propertieClass]="'btn btn-primary rounded-pill w-100'"
-                [type]="'submit'">
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col-md-6 col-sm-10 col-xs-10 col-10">
+            <input placeholder="Busque por nome" class="form-control w-100" [(ngModel)]="nameSearch"/>
+        </div>
+        <div class="col-md-1 col-sm-2 col-xs-2 col-2">
+            <app-the-button [icon]="'fas fa-search'" [propertieClass]="'btn btn-primary rounded-pill'"
+                [type]="'submit'" (buttonClick)="getListProduct()">
             </app-the-button>
 
         </div>
@@ -17,8 +28,9 @@
         </div>
     </div>
     <div class="row" *ngIf="productList.length > 0">
-        <div class="col-md-4 py-2" *ngFor="let product of productList">
-            <app-product-card [product]="product" (deletedProduct)="getListProduct()" (editProduct)="editProduct($event)"></app-product-card>
+        <div class="col-lg-4 col-sm-6 col-xs-12 py-2" *ngFor="let product of productList">
+            <app-product-card [product]="product" (deletedProduct)="getListProduct()"
+                (editProduct)="editProduct($event)"></app-product-card>
         </div>
     </div>
     <div class="row" *ngIf="!productList || productList.length == 0">
@@ -60,6 +72,8 @@
                         <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
                     <span class="small">{{fileName}}</span>
+                    <app-validate-message class="w-100" [entity]="productForm.controls.imageBase64">
+                    </app-validate-message>
                 </div>
             </div>
         </form>
