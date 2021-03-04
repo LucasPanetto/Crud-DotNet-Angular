@@ -3,6 +3,7 @@ import { BehaviorSubject } from 'rxjs'
 import { UserModel } from '../domain/user.model'
 import { LoginResultModel } from '../domain/loginResult.model'
 import { RequestService } from './request.service'
+import { pluck } from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root',
@@ -11,10 +12,7 @@ export class AuthService {
   loggedIn = new BehaviorSubject<boolean>(false)
 
   constructor(private requestService: RequestService) {
-
-    this.isValidLogged().then(data => {
-      this.loggedIn.next(data);
-    })
+    this.loggedIn.next(this.isValidLogged() ? true : false)
   }
 
   logout(): void {
@@ -22,32 +20,20 @@ export class AuthService {
     window.location.reload()
   }
 
-  async isValidLogged() {
-    try {
-      if (localStorage.getItem('user')) {
-        const storageUser: UserModel = JSON.parse(localStorage.getItem('user') || '{}');
-        const result = await this.runValidLogin(storageUser) as LoginResultModel;
+  isValidLogged(): boolean {
+    let isValid = false;
 
-        return result.success
-      }
-      return false
-    } catch (error) {
-      return false;
+    if (localStorage.getItem('user')) {
+      const storageUser: UserModel = JSON.parse(localStorage.getItem('user') || '{}');
+
+      isValid = storageUser ? true : false
+
+      return isValid
     }
-  }
-
-  runValidLogin(storageUser: UserModel) {
-    return new Promise(async (resolve, reject) => {
-      await this.requestService.login(storageUser?.userName, storageUser?.password).subscribe((data: LoginResultModel) => { resolve(data) })
-    });
+    return isValid
   }
 
   get isLoggedIn() {
     return this.loggedIn.asObservable()
   }
-
-
-  /*  getDataUser(): DataUser {
-     return JSON.parse(localStorage.getItem('user'))
-   }  */
 }
