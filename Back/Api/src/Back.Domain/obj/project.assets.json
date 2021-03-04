@@ -27,23 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Panetto\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\agape\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
       "projectName": "Back.Domain",
-      "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
-      "packagesPath": "C:\\Users\\Panetto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\obj\\",
+      "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\Back.Domain.csproj",
+      "packagesPath": "C:\\Users\\agape\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Panetto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agape\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -57,8 +53,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain.Core\\Back.Domain.Core.csproj": {
-              "projectPath": "C:\\Users\\Panetto\\Desktop\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain.Core\\Back.Domain.Core.csproj"
+            "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain.Core\\Back.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\agape\\Desktop\\Crud-DotNet-Angular\\Crud-DotNet-Angular\\Back\\Api\\src\\Back.Domain.Core\\Back.Domain.Core.csproj"
             }
           }
         }

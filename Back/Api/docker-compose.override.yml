@@ -6,12 +6,12 @@ services:
       - 1433:1433
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=Yourpassword123
-  back-api:
+      - SA_PASSWORD=Pass@word
+  crud-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_Kestrel__Certificates__Default__Password=yourpassword
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Pass@word
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx
     ports:
       - "5000:80"
