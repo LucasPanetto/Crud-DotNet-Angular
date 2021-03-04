@@ -32,10 +32,9 @@
 | Injeção de dependência .NET | Bootstrap |
 | Filtros | Responsividade |
 | Compressor de Resposta | Guardião de Rotas |
-| Testes unitários | HTTP Interceptor |
-| Testes de integração | Show file differences that haven't been staged |
-| Docker | Docker |
-| Testes de integração | Show file differences that haven't been staged |
+| Docker | HTTP Interceptor |
+|  | Docker |
+|  |  |
 
 <h1>Acessar o projeto</h1>
 
@@ -70,8 +69,6 @@
 	<li> Altere a propriedade  <code>DefaultConnection</code> do objeto <code>ConnectionString</code> no arquivo <code>Back.Api/appsettings.json</code></li>
 	<li> Para executar migrações neste projeto, execute o seguinte comando no diretório 'Back/Api': <code>dotnet ef database update --startup-project ./src/Back.Api --project ./src/Back.Infrastructure</code> </li> 			
 	
-	<br>	
-	<small>Este comando irá definir o ponto de entrada para a migração (o responsável por selecionar o dbprovider {sqlserver, mysql, etc} e a string de conexão) e o próprio projeto será a infraestrutura, que é onde está o dbcontext.</small>
 </ol>
 
 <h2>Executar no Docker (Opção 2)</h2>
