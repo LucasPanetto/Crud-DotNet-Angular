@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { LoginResultModel } from 'src/app/core/domain/loginResult.model';
 import { UserModel } from 'src/app/core/domain/user.model';
+import { AuthService } from 'src/app/core/services/auth.service';
 import { RequestService } from 'src/app/core/services/request.service';
 
 @Component({
@@ -12,7 +14,7 @@ import { RequestService } from 'src/app/core/services/request.service';
 })
 export class FormLoginComponent implements OnInit {
   loginForm: FormGroup;
-  constructor(private formBuilder: FormBuilder, private router: Router, private requestService: RequestService) {
+  constructor(private formBuilder: FormBuilder, private router: Router, private requestService: RequestService, private toastr: ToastrService, private authService: AuthService) {
     this.loginForm = this.formBuilder.group({
       userName: ['', [Validators.required]],
       password: ['', Validators.required],
@@ -33,9 +35,10 @@ export class FormLoginComponent implements OnInit {
     this.requestService.login(userLoggin.userName, userLoggin.password).subscribe((data: LoginResultModel) => {
       if (data.success) {
         localStorage.setItem('user', JSON.stringify(userLoggin))
-        this.router.navigate(['home']);
+        this.authService.loggedIn.next(true)
+        this.router.navigate(['/products']);
       } else {
-        alert(`Atenção: ${data.error}`);
+        this.toastr.warning(data.error, 'Atenção!');
       }
     })
   }
