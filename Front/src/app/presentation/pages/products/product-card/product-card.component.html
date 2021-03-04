@@ -1,7 +1,7 @@
 <div class="card container-fluid p-0">
-    <div class="card-image" [style.background-image]="'url(' + product.imageBase64  + ')'">
+    <div class="card-image" [style.background-image]="'url(' + product.imageBase64  + '), url(../../../../../assets/image_eror.png)'">
         <div class="sobrepose w-100 h-100 d-none row m-0 text-center justify-content-center align-content-center">
-            <button class="btn btn-primary">Editar Produto</button>
+            <button class="btn btn-primary" (click)="callEditPorduct(product)">Editar Produto</button>
             <button class="btn btn-danger rounded-pill ml-2" (click)="deleteProduct(product)"><i
                     class="fas fa-trash"></i></button>
         </div>
@@ -12,7 +12,7 @@
             <div class="subtitle">Descrição</div>
         </div>
         <div class="product-header col-md-3">
-            <div class="price">{{product.price}}</div>
+            <div class="price">R${{product.price}}</div>
         </div>
     </div>
 </div>
