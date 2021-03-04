@@ -1,12 +1,6 @@
 version: '3.6'
 
 services:
-  db-server:
-    ports:
-      - 1433:1433
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=Pass@word
   crud-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
