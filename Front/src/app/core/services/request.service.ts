@@ -43,8 +43,8 @@ export class RequestService {
             )
     }
 
-    put(entity: any): Observable<any> {
-        return this.httpClient.put<any>(this.defaultUrl + '/' + entity.id, JSON.stringify(entity), this.httpOptions)
+    put(path: string, entity: any): Observable<any> {
+        return this.httpClient.put<any>(this.defaultUrl + path + '/' + entity.id, JSON.stringify(entity), this.httpOptions)
             .pipe(
                 retry(1),
                 catchError(this.handleError)

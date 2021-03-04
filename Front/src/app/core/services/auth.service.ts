@@ -11,7 +11,10 @@ export class AuthService {
   loggedIn = new BehaviorSubject<boolean>(false)
 
   constructor(private requestService: RequestService) {
-    this.loggedIn.next(this.isValidLogged() ? true : false)
+
+    this.isValidLogged().then(data => {
+      this.loggedIn.next(data);
+    })
   }
 
   logout(): void {
@@ -19,13 +22,24 @@ export class AuthService {
     window.location.reload()
   }
 
-  isValidLogged(): boolean {
-    if (localStorage.getItem('user')) {
-      const storageUser: UserModel = JSON.parse(localStorage.getItem('user') || '{}');
-      const isValid = this.requestService.login(storageUser?.userName, storageUser.password).subscribe((data: LoginResultModel) => { return data.success })
-      return isValid ? true : false
+  async isValidLogged() {
+    try {
+      if (localStorage.getItem('user')) {
+        const storageUser: UserModel = JSON.parse(localStorage.getItem('user') || '{}');
+        const result = await this.runValidLogin(storageUser) as LoginResultModel;
+
+        return result.success
+      }
+      return false
+    } catch (error) {
+      return false;
     }
-    return false
+  }
+
+  runValidLogin(storageUser: UserModel) {
+    return new Promise(async (resolve, reject) => {
+      await this.requestService.login(storageUser?.userName, storageUser?.password).subscribe((data: LoginResultModel) => { resolve(data) })
+    });
   }
 
   get isLoggedIn() {
