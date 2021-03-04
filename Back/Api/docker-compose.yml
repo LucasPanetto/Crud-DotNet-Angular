@@ -4,11 +4,21 @@ networks:
     name: localdev
 
 services:
+  db-server:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: mssql
+    environment:
+      SA_PASSWORD: "Pass@word"
+      ACCEPT_EULA: "Y"
+    networks:
+      - localdev
   crud-api:
     build:
       context: .
       dockerfile: src/Back.Api/Dockerfile
     image: crud-api:local
     container_name: crud-api
+    depends_on:
+      - db-server
     networks:
       - localdev
