@@ -1,5 +1,7 @@
 
 
+
+
 <h1 align="center">CRUD de Produtos</h1>
 
 <h3 align="center">
@@ -23,7 +25,7 @@
 
 <h2> Esse projeto contém: </h2>
 
-| API (.NET 5) | Description |
+| API (.NET 5) | Client (Angular 11)|
 | --- | --- |
 | SwaggerUI | Arquitetura Limpa |
 | EntityFrameworkCore | Router Lazy Loading |
@@ -33,10 +35,12 @@
 | Filtros | Responsividade |
 | Compressor de Resposta | Guardião de Rotas |
 | Docker | HTTP Interceptor |
-|  | Docker |
-|  |  |
+| - | Docker |
 
 <h1>Acessar o projeto</h1>
+<h2>Credenciais:</h2>
+<h4>UserName:</h4> 11234567890
+<h4>Password: </h4>09876543211
 
 <h2>Executar Local (Opção 1)</h2>
 
@@ -62,10 +66,13 @@
 	<li>Instância de banco de dados SQL</li>
 </ul>
 
+<b>O projeto estará disponivel na url: <code>https://localhost:5001/api-docs</code></b>
+
 <p>Abra a 'solution' presente na pasta Back/Api, execute as migrations (<b>próximo step</b>) defina o projeto Back.Api como padrão na inicialização, execute.</p>
 
 <h3> Migrations: </h3>
 <ol>
+	<li>Execute o comando <code>dotnet tool install --global dotnet-ef</code> no diretório do BackEnd</li>
 	<li> Altere a propriedade  <code>DefaultConnection</code> do objeto <code>ConnectionString</code> no arquivo <code>Back.Api/appsettings.json</code></li>
 	<li> Para executar migrações neste projeto, execute o seguinte comando no diretório 'Back/Api': <code>dotnet ef database update --startup-project ./src/Back.Api --project ./src/Back.Infrastructure</code> </li> 			
 	
@@ -73,4 +80,41 @@
 
 <h2>Executar no Docker (Opção 2)</h2>
 
+<h3> FrontEnd: </h3>
+
+<p>Acesse o diretório do projeto: 'Crud-DotNet-Angular/Front' e execute os seguintes comandos:</p>
+
+<ol>
+	<li><code>docker build -t front .</code></li>
+	<li><code>docker run -d --name front-run -p 80:80  front</code></li>
+</ol>
+
+<h3> BackEnd: </h3>
+
+<ol>
+	<li>Acesse o arquivo appconfig.json presente no diretório 'Crud-DotNet-Angular/back/Api/Back.Api' e altere a DefaultConnection para a string do DefaultConnectionDocker</li>
+</ol>
+
+<p>Acesse o diretório do projeto: 'Crud-DotNet-Angular/back/Api' e execute o seguintes comandos:</p>
+
+<ol>
+	<li><code>docker-compose up -d crud-api</code></li>
+</ol>
+
+<b>O projeto estará disponivel na url: <code>https://localhost:5001/api-docs</code></b>
+
+<h2>Implementações Futuras</h2>
+<ol>
+	<li>Testes (Front e Back)</li>
+	<li>Melhorias Layout</li>
+	<li>CI e CD (GithubActions)</li>
+	<li>Validação JWT (Necessária alteração na api de login)</li>
+	<li>Hospedar container no AWS/Azure</li>
+</ol>
+
+<h2>Considerações finais:</h2>
+
+<ul>
+<li>Tentei hospedar o projeto inteiro no AWS, mas não consegui completar essa tarefa. Apenas o banco e o FrontEnd estão ativos na plataforma: <a href="http://18.224.33.207">Front</a> e para conectar na base, o servidor é: <code>crud-database.c1p7dza5mbaq.us-east-2.rds.amazonaws.com,1433</code> e credenciais: <code>user: admin pass: senha1000</code></li>
+</ul>
 
