@@ -14,14 +14,7 @@
 
 <p align="center">Projeto para cadastro de produtos, utilizando tecnologias e biblitecas atuais</p>
 
-<p align="center">
- <a href="#objetivo">Objetivo</a> •
- <a href="#roadmap">Roadmap</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
- <a href="#autor">Autor</a>
-</p>
+
 
 <h2> Esse projeto contém: </h2>
 
