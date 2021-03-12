@@ -107,10 +107,6 @@
 
 <h2>Considerações finais:</h2>
 
-<ul>
-<li>Tentei hospedar o projeto inteiro no AWS, mas não consegui completar essa tarefa. Apenas o banco e o FrontEnd estão ativos na plataforma: <a href="http://18.224.33.207">Front</a> e para conectar na base, o servidor é: <code>crud-database.c1p7dza5mbaq.us-east-2.rds.amazonaws.com,1433</code> e credenciais: <code>user: admin pass: senha1000</code></li>
-</ul>
-
 <h2>Se você gosta, dê uma estrela</h2>
 Se este modelo foi útil para você, ou se você aprendeu algo, por favor, dê a ele uma estrela! ⭐
 
