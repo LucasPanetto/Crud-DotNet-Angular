@@ -105,9 +105,3 @@
 	<li>Hospedar container no AWS/Azure</li>
 </ol>
 
-<h2>Considerações finais:</h2>
-
-<h2>Se você gosta, dê uma estrela</h2>
-Se este modelo foi útil para você, ou se você aprendeu algo, por favor, dê a ele uma estrela! ⭐
-
-
